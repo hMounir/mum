@@ -1,0 +1,145 @@
+body{
+    background-image: url("images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* banner block */
+.bannerDiv{
+    background-image: url("images/bannerbg.png");
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+.bannerDiv img{
+    height: 50px;
+}
+
+/* movie title block */
+h1{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, serif;
+    text-shadow: 3px 3px #999999;
+}
+
+/* content */
+.main{
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    border: 4px solid gray;
+    overflow: auto;
+    position: relative;
+}
+
+/* contains reviews and rating block (left side)*/
+.column1{
+    width: 550px;
+    float: left;
+}
+/* rating block */
+.ratingDiv{
+    background-image: url("images/rbg.png");
+    background-repeat: repeat-x;
+}
+
+.ratingDiv img{
+    height: 83px;
+    vertical-align: bottom;
+}
+
+.ratingDiv span{
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+/* reviews block */
+.reviews{
+    max-width: 550px;
+    margin-left: 10px;
+}
+
+.review{
+    width: 47%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.review img{
+    float: left;
+    margin-right: 5px;
+}
+
+.review p{
+    overflow: auto;
+    font-size: 8pt;
+}
+
+.review p:first-of-type{
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.review p:last-of-type{
+    margin-bottom: 20pt;
+}
+
+.review .publication{
+    font-style: italic;
+}
+
+/* movie details block (right side) */
+.column2{
+    float: right;
+    background-color: #A2B964;
+    width: 250px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.column2 dl{
+    padding-left: 10pt;
+}
+
+.column2 dt{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.column2 li{
+    list-style-type: none;
+}
+
+/* phone section */
+.pages {
+    position: absolute;
+    background-color: #A2B964;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+.pages p {
+    padding: 5px;
+    margin: 0;
+}
+
+.buttons{
+    position: fixed;
+    right: 0;
+    opacity: .5;
+    bottom: 0;
+}

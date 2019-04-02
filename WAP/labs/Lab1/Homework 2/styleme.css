@@ -1,0 +1,63 @@
+h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+    color: blue;
+}
+
+h2{
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  color: blue;
+}
+
+p::first-letter {
+  color: black;
+  font-size: xx-large;
+}
+
+a{
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+dt{
+  color: yellow;
+}
+
+dd{
+  color: darkslategrey;
+}
+
+.container{
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }

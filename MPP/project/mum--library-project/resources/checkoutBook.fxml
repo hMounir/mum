@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.CheckoutBookController">
+   <children>
+      <Label text="Checkout Book">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="300.0" top="15.0" />
+         </VBox.margin></Label>
+       <HBox prefHeight="100.0" prefWidth="200.0">
+           <children>
+               <Label prefHeight="17.0" prefWidth="73.0" text="Member Id:">
+                   <font>
+                       <Font size="14.0" />
+                   </font></Label>
+               <TextField fx:id="memberId" prefHeight="25.0" prefWidth="139.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></TextField>
+               <Label prefHeight="17.0" prefWidth="59.0" text="ISBN:">
+                   <padding>
+                       <Insets left="20.0" />
+                   </padding>
+                   <font>
+                       <Font size="14.0" />
+                   </font>
+               </Label>
+               <TextField fx:id="isbn" prefHeight="25.0" prefWidth="192.0" />
+               <Button mnemonicParsing="false" onAction="#checkout" prefHeight="11.0" prefWidth="125.0" text="Checkout">
+                   <HBox.margin>
+                       <Insets left="18.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold" size="12.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#mainPage" prefHeight="11.0" prefWidth="125.0" text="Back">
+                   <HBox.margin>
+                       <Insets left="8.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold" size="12.0" />
+                   </font>
+               </Button>
+           </children>
+           <VBox.margin>
+               <Insets left="25.0" right="25.0" top="41.0" />
+           </VBox.margin>
+       </HBox>
+       <TableView fx:id="checkoutList" prefHeight="200.0" prefWidth="200.0">
+           <columns>
+               <TableColumn fx:id="bookCopyCol" prefWidth="75.0" text="Book Copy" />
+               <TableColumn fx:id="checkoutDateCol" prefWidth="108.0" text="Checkout Date" />
+               <TableColumn fx:id="dueDateCol" prefWidth="75.0" text="Due Date" />
+           </columns>
+           <VBox.margin>
+               <Insets left="25.0" right="25.0" />
+           </VBox.margin>
+       </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet vista.css?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml" fx:controller="library.ui.BaseController">
+    <children>
+        <fx:include source="/layout/menuBar.fxml"/>
+        <VBox fx:id="pageHolder" />
+    </children>
+</VBox>

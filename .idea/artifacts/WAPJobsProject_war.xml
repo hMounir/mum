@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WAPJobsProject:war">
+    <output-path>$PROJECT_DIR$/WAP/project/WAPJobsProject/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WAPJobsProject</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WAPJobsProject-0.1.war">
+      <element id="artifact" artifact-name="WAPJobsProject:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -3,8 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BD/BD.iml" filepath="$PROJECT_DIR$/BD/BD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BD/labs/labs.iml" filepath="$PROJECT_DIR$/BD/labs/labs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPP/MPP.iml" filepath="$PROJECT_DIR$/MPP/MPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/WAP.iml" filepath="$PROJECT_DIR$/WAP/WAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/project/WAPJobsProject/WAPJobsProject.iml" filepath="$PROJECT_DIR$/WAP/project/WAPJobsProject/WAPJobsProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/labs/lab11/lab11.iml" filepath="$PROJECT_DIR$/WAP/labs/lab11/lab11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/labs/lab12/lab12.iml" filepath="$PROJECT_DIR$/WAP/labs/lab12/lab12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/labs/lab13/lab13.iml" filepath="$PROJECT_DIR$/WAP/labs/lab13/lab13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WAP/labs/labs.iml" filepath="$PROJECT_DIR$/WAP/labs/labs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mum.iml" filepath="$PROJECT_DIR$/.idea/mum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPP/project/mum--library-project/mum--library-project.iml" filepath="$PROJECT_DIR$/MPP/project/mum--library-project/mum--library-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPP/project/project.iml" filepath="$PROJECT_DIR$/MPP/project/project.iml" />
     </modules>
   </component>
 </project>

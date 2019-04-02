@@ -1,0 +1,43 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C5DDEB;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  padding: 40px 0;
+  color: white;
+}
+
+.chatBox{
+    border-radius: 25px;
+    background-color: steelblue;
+    margin: 20px; 
+    display: none;
+}
+
+.posterDetails{
+    padding: 10px;
+}
+
+.posts{
+  padding: 10px;
+}
+
+.postDetails{
+    border-radius: 25px;
+    background-color: gray;
+}
+
+.commentsSection{
+    margin: 20px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: darkgray;
+    padding: 15px;
+}
+
+.commentBody{
+    margin-left: 45px;
+}
+

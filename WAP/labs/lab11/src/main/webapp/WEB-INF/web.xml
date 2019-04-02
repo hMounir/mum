@@ -1,0 +1,15 @@
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        id="Your_WebApp_ID"
+        version="2.5">
+
+  <display-name>Servlet demo</display-name>
+
+  <context-param>
+    <param-name>support_email</param-name>
+    <param-value>test@support.com</param-value>
+  </context-param>
+</web-app>

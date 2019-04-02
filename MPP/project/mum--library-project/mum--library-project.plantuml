@@ -1,0 +1,307 @@
+@startuml
+
+title __MUM--LIBRARY-PROJECT's Class Diagram__\n
+
+  package library {
+    package library.ui {
+      class AddBookController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class AddBookCopyController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class AddMemberController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class Address {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class Admin {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class AdminDataAccess {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class Author {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      enum AuthorizationLevel {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class BaseController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class Book {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class BookCopy {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class BookDataAccess {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.userexception {
+      class BookException {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class BookInfoDialogController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class CheckOutRecord {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class CheckOutRecordEntry {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class CheckoutBookController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      interface DataAccessFacade {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class DataAccessFacadeImp {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class LibraryMember {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class LoginController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class Main {
+      }
+    }
+  }
+  
+
+  package library {
+    class MainApp {
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      class MainPageController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.userexception {
+      class MemberException {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class MembersDataAccess {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      package library.ui.util {
+        class MessagesUtil {
+        }
+      }
+    }
+  }
+  
+
+  package library {
+    package library.ui {
+      package library.ui.util {
+        class PageNavigator {
+        }
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class Person {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.dataaccess {
+      class StorageUtility {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class SystemController {
+      }
+    }
+  }
+  
+
+  package library {
+    package library.business {
+      class User {
+      }
+    }
+  }
+  
+
+  AddBookController -up-|> BaseController
+  AddBookCopyController -up-|> BaseController
+  AddBookCopyController o-- Book : book
+  AddMemberController -up-|> BaseController
+  Address -up-|> Serializable
+  Admin -up-|> Serializable
+  Admin -up-|> Person
+  Admin o-- User : user
+  AdminDataAccess -up-|> DataAccessFacadeImp
+  Author -up-|> Serializable
+  Author -up-|> Person
+  BaseController o-- SystemController : systemController
+  Book -up-|> Serializable
+  BookCopy -up-|> Serializable
+  BookCopy o-- Book : book
+  BookDataAccess -up-|> DataAccessFacadeImp
+  BookInfoDialogController o-- AddBookCopyController : addBookCopyController
+  CheckOutRecord -up-|> Serializable
+  CheckOutRecordEntry -up-|> Serializable
+  CheckOutRecordEntry o-- CheckOutRecord : checkOutRecord
+  CheckOutRecordEntry o-- BookCopy : bookCopy
+  CheckoutBookController -up-|> BaseController
+  DataAccessFacadeImp -up-|> DataAccessFacade
+  LibraryMember -up-|> Serializable
+  LibraryMember -up-|> Person
+  LibraryMember o-- CheckOutRecord : checkOutRecord
+  MainApp -up-|> Application
+  MainPageController -up-|> BaseController
+  MembersDataAccess -up-|> DataAccessFacadeImp
+  Person -up-|> Serializable
+  Person o-- Address : address
+  SystemController o-- MembersDataAccess : membersDataAccess
+  SystemController o-- BookDataAccess : bookDataAccess
+  User -up-|> Serializable
+  User o-- AuthorizationLevel : authorizationLevel
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

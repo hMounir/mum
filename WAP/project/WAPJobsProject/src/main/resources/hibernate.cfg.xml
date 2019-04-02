@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Datasource Details -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/jobs
+        </property>
+        <property name="hibernate.connection.username">hisham</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- Hibernate Properties -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQL57Dialect
+        </property>
+
+        <!-- Resource Mapping -->
+        <mapping class="edu.wap.jobs.domain.Company"/>
+        <mapping class="edu.wap.jobs.domain.Industry"/>
+        <mapping class="edu.wap.jobs.domain.Jobs"/>
+        <mapping class="edu.wap.jobs.domain.JobTitle"/>
+        <mapping class="edu.wap.jobs.domain.Location"/>
+        <mapping class="edu.wap.jobs.domain.Skills"/>
+        <mapping class="edu.wap.jobs.domain.User"/>
+        <mapping class="edu.wap.jobs.domain.State"/>
+        <mapping class="edu.wap.jobs.domain.AppliedJobs"/>
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,8 @@
+fieldset legend{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.changePageBackground{
+    background-image: url("http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg ");
+}

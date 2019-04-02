@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ui.AddBookCopyController">
+   <children>
+      <Label text="Add Book Copy">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="300.0" top="15.0" />
+         </VBox.margin></Label>
+       <HBox prefHeight="100.0" prefWidth="200.0">
+           <children>
+               <Label text="ISBN:">
+                   <HBox.margin>
+                       <Insets right="20.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font size="14.0" />
+                   </font>
+               </Label>
+               <TextField fx:id="isbn" prefHeight="25.0" prefWidth="222.0" />
+               <Button mnemonicParsing="false" onAction="#lookup" prefHeight="25.0" prefWidth="166.0" text="Lookup">
+                   <HBox.margin>
+                       <Insets left="25.0" />
+                   </HBox.margin>
+                   <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font>
+               </Button>
+               <Button mnemonicParsing="false" onAction="#mainPage" prefHeight="25.0" prefWidth="166.0" text="Back">
+                   <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font>
+                   <HBox.margin>
+                       <Insets left="10.0" />
+                   </HBox.margin>
+               </Button>
+           </children>
+           <VBox.margin>
+               <Insets left="25.0" right="25.0" top="41.0" />
+           </VBox.margin>
+       </HBox>
+       <TableView fx:id="booksList" prefHeight="200.0" prefWidth="200.0">
+           <columns>
+               <TableColumn prefWidth="75.0" text="ISBN" fx:id="isbnCol"/>
+               <TableColumn prefWidth="75.0" text="Title" fx:id="titleCol"/>
+               <TableColumn prefWidth="94.0" text="Book Copies" fx:id="copiesNumCol"/>
+               <TableColumn prefWidth="93.0" text="Available Copies" fx:id="availableCopies"/>
+               <TableColumn prefWidth="93.0" text="Book Due Days" fx:id="bookdueDaysCol"/>
+           </columns>
+           <VBox.margin>
+               <Insets left="25.0" right="25.0" />
+           </VBox.margin>
+       </TableView>
+   </children>
+</VBox>
