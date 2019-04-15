@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bd">
+    <output-path>$PROJECT_DIR$/BD/labs/bin/artifacts/bd</output-path>
+    <root id="archive" name="bd.jar" />
+  </artifact>
+</component>
