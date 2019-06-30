@@ -25,7 +25,7 @@ public class Employee {
     private String name;
 
 
-    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Laptop> laptops = new HashSet<>();
 
     public Employee(String name) {
